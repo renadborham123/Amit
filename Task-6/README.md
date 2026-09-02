@@ -1,19 +1,25 @@
-# Task-6
+# Task-6: Final Project OOP Tasks 1-7
 
-This folder contains the NumPy solutions from the assignment image:
+The old NumPy exercise previously stored in `Task-6` was replaced with the
+provided `Final project6-7.ipynb` assignment. The completed project includes:
 
-1. `array_factory` creates zero-filled, one-filled, constant-filled, and
-   identity arrays using NumPy factory methods.
-2. `secure_reshape_and_stack` converts inputs to arrays, reshapes the first
-   dataset, and vertically stacks it with the second dataset. Invalid reshape
-   or column combinations raise a clear `Company-grade Error`.
+- `BankAccount` for deposits, withdrawals, and balance checks.
+- `Calculator` arithmetic methods with division-by-zero handling.
+- Abstract `Animal` with `Dog`, `Cat`, and `Cow` implementations.
+- `TextFileReader` for file content and line/word/character counts.
+- `count_word_frequency` for unique word frequencies.
+- `read_txt_file` and `UserExtractor` for `username:password` files.
+- Hospital classes: `Person`, `Patient`, `Staff`, `Department`, and `Hospital`.
 
-## Run
+## Run the script
 
 From the repository root:
 
 ```bash
-python Task-6/main.py
+python Task-6/final_project.py
 ```
 
-NumPy is required (`pip install numpy`).
+## Run the notebook
+
+Open [`Final project6-7.ipynb`](./Final%20project6-7.ipynb) from the `Task-6`
+folder in Jupyter or VS Code and run the cells from top to bottom.
