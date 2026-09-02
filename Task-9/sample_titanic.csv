@@ -1,0 +1,6 @@
+PassengerId,Survived,Name,Age,Embarked,Ticket,Fare
+1,0,"Braund, Mr. Owen Harris",22,S,A/5 21171,7.25
+2,1,"Cumings, Mrs. John Bradley",38,C,PC 17599,71.2833
+3,1,"Heikkinen, Miss. Laina",26,S,STON/O2. 3101282,7.925
+4,1,"Futrelle, Mrs. Jacques Heath",35,S,113803,53.1
+5,0,"Allen, Mr. William Henry",35,S,373450,8.05
