@@ -222,88 +222,6 @@ class UserExtractor:
         return self.usernames
 
 
-class Person:
-    """Base class for people working or receiving care in a hospital."""
-
-    def __init__(self, name: str, age: int) -> None:
-        """Store a person's name and age."""
-
-        self.name = name
-        self.age = age
-
-    def view_info(self) -> str:
-        """Return basic personal information."""
-
-        return f"Name: {self.name}, Age: {self.age}"
-
-
-class Patient(Person):
-    """Represent a hospital patient and their medical record."""
-
-    def __init__(self, name: str, age: int, medical_record: str) -> None:
-        """Store patient details and initialize the shared person fields."""
-
-        super().__init__(name, age)
-        self.medical_record = medical_record
-
-    def view_record(self) -> str:
-        """Return the patient's medical record."""
-
-        return f"Patient Record: {self.medical_record}"
-
-
-class Staff(Person):
-    """Represent a hospital staff member and their position."""
-
-    def __init__(self, name: str, age: int, position: str) -> None:
-        """Store staff details and initialize the shared person fields."""
-
-        super().__init__(name, age)
-        self.position = position
-
-    def view_info(self) -> str:
-        """Return staff information including their position."""
-
-        return f"Staff Name: {self.name}, Age: {self.age}, Position: {self.position}"
-
-
-class Department:
-    """Group patients and staff members within a hospital department."""
-
-    def __init__(self, name: str) -> None:
-        """Store the department name and create empty member lists."""
-
-        self.name = name
-        self.patients: list[Patient] = []
-        self.staff: list[Staff] = []
-
-    def add_patient(self, patient: Patient) -> None:
-        """Add a patient to the department."""
-
-        self.patients.append(patient)
-
-    def add_staff(self, staff_member: Staff) -> None:
-        """Add a staff member to the department."""
-
-        self.staff.append(staff_member)
-
-
-class Hospital:
-    """Manage a hospital and its departments."""
-
-    def __init__(self, name: str, location: str) -> None:
-        """Store hospital details and initialize its department list."""
-
-        self.name = name
-        self.location = location
-        self.departments: list[Department] = []
-
-    def add_department(self, department: Department) -> None:
-        """Add a department to the hospital."""
-
-        self.departments.append(department)
-
-
 def demo() -> None:
     """Run a short demonstration for each final-project task."""
 
@@ -318,14 +236,6 @@ def demo() -> None:
         print(animal.describe(), "-", animal.make_sound())
 
     print("Word frequency:", count_word_frequency(["Welcome", "Ali", "Ali", "Hi"]))
-
-    hospital = Hospital("City Hospital", "123 Main St")
-    cardiology = Department("Cardiology")
-    cardiology.add_patient(Patient("Alice", 30, "No known allergies"))
-    cardiology.add_staff(Staff("Dr. Smith", 45, "Cardiologist"))
-    hospital.add_department(cardiology)
-    print("Hospital:", hospital.name, "-", hospital.departments[0].name)
-
 
 if __name__ == "__main__":
     demo()

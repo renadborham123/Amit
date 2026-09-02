@@ -1,4 +1,4 @@
-# Task-6: Final Project OOP Tasks 1-7
+# Task-6: Final Project OOP Tasks 1-6
 
 The old NumPy exercise previously stored in `Task-6` was replaced with the
 provided `Final project6-7.ipynb` assignment. The completed project includes:
@@ -9,7 +9,6 @@ provided `Final project6-7.ipynb` assignment. The completed project includes:
 - `TextFileReader` for file content and line/word/character counts.
 - `count_word_frequency` for unique word frequencies.
 - `read_txt_file` and `UserExtractor` for `username:password` files.
-- Hospital classes: `Person`, `Patient`, `Staff`, `Department`, and `Hospital`.
 
 ## Run the script
 
